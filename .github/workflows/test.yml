@@ -19,4 +19,4 @@ jobs:
         id: perl
         uses: shogo82148/actions-setup-perl@v1
         with: { perl-version: latest }
-      - run: cpm install --verbose --show-build-log-on-failure --no-test List::MoreUtils::XS
+      - run: cpanm --no-test List::MoreUtils::XS
